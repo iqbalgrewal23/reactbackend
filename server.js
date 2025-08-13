@@ -6,7 +6,7 @@ const cors = require('cors'); // Import the cors middleware
 const app = express();
 
 // Enable CORS for requests from http://localhost:3001
-app.use(cors({ origin: 'http://localhost:3001' }));
+app.use(cors({ origin: 'https://frontendforreact.netlify.app' }));
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB Atlas'))
